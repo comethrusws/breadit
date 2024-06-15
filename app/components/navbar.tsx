@@ -23,7 +23,7 @@ export async function Navbar() {
         <ThemeToggle/>
         { user ? (
           <div>
-            <UserDropdown/>
+            <UserDropdown userImage={user.picture}/>
           </div>
         ): (
           <div className='flex items-center gap-x-2'>
