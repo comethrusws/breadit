@@ -42,7 +42,7 @@ export function SettingsForm({
 
             <div className="w-full flex mt-5 gap-x-5 justify-end">
                 <Button variant={"secondary"} asChild type="button"><Link href="/">Cancel</Link></Button>
-                <SubmitButton/>
+                <SubmitButton text="Change Username"/>
             </div>
         </form>
     )

@@ -1,0 +1,53 @@
+"use client"
+import { createCommunity } from "@/app/actions";
+import { SubmitButton } from "@/app/components/SubmitButtons";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Separator } from "@/components/ui/separator";
+import { toast, useToast } from "@/components/ui/use-toast";
+import Link from "next/link";
+import { useEffect } from "react";
+import { useFormState } from "react-dom";
+
+const initialState={
+    message:"",
+    status:"",
+}
+
+export default function SubbreaditPage(){
+    const[state, formAction]=useFormState(createCommunity,initialState);
+    const {}= useToast();
+
+    useEffect(()=>{
+        if(state.status==='error'){
+            toast({
+                title:'Error',
+                description:state.message
+            })
+        };
+    },[state]);
+
+
+    return(
+        <div className="max-w-[80%] mx-auto flex flex-col mt-4">
+            <form action={formAction}>
+                <h1 className="text-3xl font-bold tracking-tight">Create Community</h1>
+                <Separator className="my-4"/>
+                <Label className="text-lg">Name</Label>
+                <p className="text-muted-foreground text-xs">**Community names including capitalization cannot be changed!</p>
+
+                <div className="relative mt-3">
+                    <p className="absolute left-0 w-8 flex items-center justify-center h-full text-muted-foreground">br/</p>
+                    <Input name="name" required className="pl-6" min={6} maxLength={21}/>
+                    <p className="absolute text-red-500 text-xs mt-1">{state.message}</p>
+                </div>
+
+                <div className="w-full flex mt-5 gap-x-5 justify-end">
+                    <Button asChild variant={"secondary"}><Link href="/">Cancel</Link></Button>
+                    <SubmitButton text="Create Community" />
+                </div>
+            </form>
+        </div>
+    )
+}

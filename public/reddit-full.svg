@@ -145,14 +145,14 @@
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
    inkscape:zoom="1"
-   inkscape:cx="-18.5"
+   inkscape:cx="-19"
    inkscape:cy="143"
    inkscape:window-width="1366"
    inkscape:window-height="712"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
-   inkscape:current-layer="g72" />
+   inkscape:current-layer="Layer_1" />
 <style
    type="text/css"
    id="style1">
@@ -175,7 +175,7 @@
    class="st0"
    d="m 128.97131,2.6788025 v 0 C 58.271314,2.6788025 0.97131344,57.518381 0.97131344,125.18257 v 0 c 0,33.87995 14.30000056,64.50589 37.50000056,86.61399 l -24.4,23.35228 c -4.8000006,4.59389 -1.4,12.5375 5.4,12.5375 H 128.97131 v 0 c 70.7,0 128,-54.83958 128,-122.50377 v 0 c 0,-67.664189 -57.3,-122.5037675 -128,-122.5037675 z"
    id="path1"
-   style="stroke-width:0.978295" />
+   style="stroke-width:0.978295;fill:#009c00;fill-opacity:1" />
 <g
    id="g72">
 	
@@ -369,11 +369,13 @@
 	<path
    class="st4"
    d="m 112.0572,115.1997 c -0.5,10.8 -7.7,14.8 -16.099999,14.8 -8.4,0 -14.8,-5.6 -14.3,-16.4 0.5,-10.8 7.7,-17.999999 16.1,-17.999999 8.399999,0 14.799999,8.799999 14.299999,19.599999 z"
-   id="path36" />
+   id="path36"
+   style="fill:#000000;fill-opacity:1" />
 	<path
    class="st4"
    d="m 184.65164,114.16287 c 0.5,10.8 -5.9,16.4 -14.3,16.4 -8.4,0 -15.6,-3.9 -16.1,-14.8 -0.5,-10.8 5.9,-19.599998 14.3,-19.599998 8.4,0 15.6,7.099998 16.1,17.999998 z"
-   id="path37" />
+   id="path37"
+   style="fill:#000000;fill-opacity:1" />
 	
 		<radialGradient
    id="SVGID_00000100358442326342623590000001008359023910400391_"
@@ -569,13 +571,15 @@
    cy="106.37599"
    rx="3.3"
    ry="3.5999999"
-   id="ellipse71" />
+   id="ellipse71"
+   style="fill:#cdcdcd;fill-opacity:1" />
 	<ellipse
    class="st13"
    cx="172.18037"
    cy="106.37599"
    rx="3.3"
    ry="3.5999999"
-   id="ellipse72" />
+   id="ellipse72"
+   style="fill:#cdcdcd;fill-opacity:1" />
 </g>
 </svg>
