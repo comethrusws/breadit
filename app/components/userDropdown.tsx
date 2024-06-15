@@ -13,7 +13,7 @@ export default function UserDropdown({userImage}: iAppProps) {
   return (
     <DropdownMenu>
         <DropdownMenuTrigger>
-            <div className='outline-none rounded-full border px-2 py-2 lg:px-4 lg:py-2 flex items-center gap-x-4'>
+            <div className='outline-none rounded-full border px-2 py-2 lg:px-3 lg:py-2 flex items-center gap-x-4'>
                 <MenuIcon className='w-6 h-6 lg:w-5 lg:h-5'/>
                 <img src={userImage ?? 'https://commons.wikimedia.org/wiki/File:Default_pfp.jpg'} alt="" className='rounded-full h-8 w-8 hidden lg:block'></img>
             </div>
