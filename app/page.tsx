@@ -87,10 +87,10 @@ export default function Home({
 
             <div className="flex flex-col gap-y-3">
               <Button asChild variant="secondary">
-                <Link href="/r/janmarshal/create">Create Post</Link>
+                <Link href="/br/linux/create">Create Post</Link>
               </Button>
               <Button asChild>
-                <Link href="/r/create">Create Community</Link>
+                <Link href="/br/create">Create Community</Link>
               </Button>
             </div>
           </div>
