@@ -1,9 +1,10 @@
 import { updateDescription } from "@/app/actions";
-import SubDescriptionForm from "@/app/components/SubDescriptionForm";
+import {SubDescriptionForm} from "@/app/components/SubDescriptionForm";
 import { SaveButton } from "@/app/components/SubmitButtons";
 import prisma from "@/app/lib/db";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
+import { Separator } from "@/components/ui/separator";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Cake } from "lucide-react";
 import Image from "next/image";
@@ -57,6 +58,11 @@ export default async function SubbreaditRoute({params}:{params:{id: string}}){
                             <Cake className="h-5 w-5 text-muted-foreground text-xs"/>
                             <p className="text-xs text-muted-foreground">Created: {new Date(data?.createdAt as Date).toLocaleDateString('en-us', {weekday:'long', year:'numeric', month:'short'})}</p>
                         </div>
+
+                        <Separator className="my-5"/>
+                        <Button asChild className="rounded-full w-full">
+                            <Link href={user?.id ? `/br/${data?.name}/create` : '/api/auth/login'}> Create Post</Link>
+                        </Button>
                     </div>
                 </Card>
             </div>
