@@ -1,6 +1,6 @@
 # 🥖 Breadit
 
-I use reddit alot, so i tried making this webapp. "Breadit" is a Reddit-like app for making communities (subreadits), posts and interacting with users in realtime, in additions to authentications. this is built using NExt.js, Supabase, Prisma, Tailwind, shadCN and Kinde(auth part)
+I use reddit alot, so i tried making this webapp. "Breadit" is a Reddit-like app for making communities (subreadits), posts and interacting with users in realtime, in additions to authentications. this is built using NExt.js, Supabase, Prisma, Tailwind, shadcn and Kinde(auth part)
 
 ## 🌟 What's Inside?
 
