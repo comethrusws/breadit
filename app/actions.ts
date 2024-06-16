@@ -75,4 +75,37 @@ export async function createCommunity(prevState: any, formData: FormData) {
       throw e;
     }
   }
+
+export async function updateDescription(prevState:any, formData: FormData){
+  const {getUser} = getKindeServerSession();
+  const user = await getUser();
+
+  if(!user){
+    return redirect("/api/auth/login");
+  };
+
+  try {
+    const subName= formData.get("subName") as string;
+    const  description= formData.get("description") as string;
   
+    await prisma.subbreadit.update({
+      where:{
+        name: subName,
+      },
+      data:{
+        description: description,
+      }
+    });
+    return{
+      status:"green",
+      message:"Updated the description successfully"
+    }
+  
+  } catch (error) {
+    return {
+    message:"Sorry, Something went wrong!",
+    status:"red"
+    }
+  }
+
+}
