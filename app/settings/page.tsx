@@ -2,7 +2,7 @@ import React from 'react'
 import prisma from '../lib/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 import { redirect } from 'next/navigation';
-import { SettingsForm } from '../components/settingsForm';
+import { SettingsForm } from '../components/SettingsForm';
 import { Separator} from "@/components/ui/separator"
 
 async function getData(userId: string){
