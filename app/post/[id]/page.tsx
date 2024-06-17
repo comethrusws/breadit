@@ -170,7 +170,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
                 height={60}
                 className="rounded-full h-16 w-16"
               />
-              <Link href={`/r/${data?.subName}`} className="font-medium">
+              <Link href={`/br/${data?.subName}`} className="font-medium">
                 r/{data?.subName}
               </Link>
             </div>
