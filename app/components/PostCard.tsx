@@ -48,7 +48,7 @@ export function PostCard({
       <div>
         <div className="flex items-center gap-x-2 p-2">
           <Link className="font-semibold text-xs" href={`/br/${subName}`}>
-            r/{subName}
+            br/{subName}
           </Link>
           <p className="text-xs text-muted-foreground">
             Posted by: <span className="hover:text-primary">u/{userName}</span>
